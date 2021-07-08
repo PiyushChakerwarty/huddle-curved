@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+:root{
+    --color-primary-l-pink:hsl(321, 100%, 78%);
+    --color-pink: hsl(322, 100%, 66%);
+    --color-red: hsl(0, 100%, 63%);
+    --color-pale-blue: hsl(207, 100%, 98%);
+    --color-cyan: hsl(192, 100%, 9%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+/*------ Header ------*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 6%;
+}
+.try-it-free{
+    color: var(--color-primary-l-pink);
+    padding: 10px 30px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid hsl(321, 100%, 78%);
+    border-radius: 20px ;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px hsla(321, 100%, 78%, 0.5) ;
+    transition: all 0.5s ease-in-out 0s;
+    cursor: pointer;
+}
+.try-it-free:hover{
+    box-shadow: 0 5px 3px 0 var(--color-primary-l-pink);
+    transform: translateY(-5px);
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    opacity: 0.9;
+    margin: 26px auto;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    opacity: 0.9;
+    margin: 20px auto;
+}
+.info p{
+    /* opacity: 0.85; */
+    width: 50%;
+    margin: 20px auto;
+    font-weight: normal;
+}
+.get-started{
+    margin: 4% auto;
+    padding: 15px 90px;
+    width: 350px;
+    color: white;
+    background-color: var(--color-pink);
+    border: 1px solid var(--color-pink) ;
+    border-radius: 50px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out 0s;
+    cursor: pointer;
+}
+.get-started:hover{
+    transform: translateY(-5px);  
+}
+
+/* -------Screens------ */
+.screen{
+    width: 70%;
+    margin: 0 auto;
+}
+.screen img{
+    width: 100%;
+}
+
+/* --------- Counter ------- */
+.counter{
+    margin: 10% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.counter h1{
+    font-size: 80px;
+    margin: auto;
+}
+.counter-text{
+    opacity: 0.5;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* --------- Grow Together ------- */
+.bg-lt-blue{
+    background-color: var(--color-pale-blue);
+}
+.bg-img-desktop{
+    /* margin: 0 auto; */
+    width: 100%;
+    display: block;
+}
+.bg-img-mob{display: none;}
+.container{
+    display: inline-flex;
+    justify-content: center;  
+}
+.row{
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.container-img{
+    flex: 1 1 0;
+}
+.container-img img{
+    width: 100%;
+    flex: 1;
+}
+.content-1{
+    flex: 1 1 0;
+    margin-right: 10%;
+}
+.content-1 p{
+    text-align: justify;
+}
+.content-2{
+    flex: 1 1 0;
+    margin-left: 10%;
+}
+.content-2 p{
+    text-align: justify;
+}
+#container-center{
+    margin: 10% auto;
+}
+/*  ------------ Info Bottom ------------  */
+.info-bottom{
+    margin: 10% auto;
+}
+/* ----------- ANIMATION ------------ */
+.floating {
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+@keyframes floating {
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 15px); }
+	100% { transform: translate(0, -0px); }
+}
+
+
+/* ------------- FOOTER ------------ */
+.bg-footer{
+    width: 100%;
+    display: block;         /* to remove default spacing in between */
+}
+footer{
+    background-color: var(--color-cyan);
+    color: white;
+    /* padding: 5% auto; */
+}
+.bg-footer-mob{
+    display: none;
+}
+.container-footer{
+    display: block;
+}
+.row-footer{
+    display: flex;
+    width: 90%;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+.contact{
+    flex: 1;
+}
+.logo{
+    fill: white;
+}
+.info-footer{
+    width: 60%;
+    margin: 20px 0;
+    line-height: 1.75;
+}
+.email{
+    margin: 20px 0;
+}
+.phone img, .email img{
+    margin-right: 10px;
+}
+.social{
+    margin-top: 15%;
+}
+.fab{
+    font-size: 30px;
+}
+.fa-instagram{
+    margin: 0 10px;
+}
+/* ------------ NEWSLETTER ---------- */
+.newsletter{
+    margin-left: 10% ;
+    flex: 1;
+    padding-top: 10px;
+}
+.info-news p{
+    /* display: block; */
+    padding: 30px 0;
+    width: 90%;
+}
+.attribution{
+    padding: 30px 0;
+    text-align: center;
+}
+.newsletter-subscribe{
+    display: flex;
+}
+.email-box{
+    height: 50px;
+    width: 60%;
+    padding-left: 20px;
+    border-radius: 7px;
+}
+.subscribe{
+    background-color: var(--color-pink);
+    color: white;
+    height: 50px;
+    font-weight: 900;
+    padding: 10px 30px;
+    border-radius: 7px;
+    margin-left: 5%;
+}
+.fm p{
+    font-size: 15px;
+}
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 20px;
+        margin: 0.5em auto;
+    }
+    h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .info p{
+        width: 90%;
+        font-size: 11px;
+    }
+    .navbar{
+        padding: 50px 20px;
+    }
+    .navbar img{
+        width: 40% ;
+        height: 50%;
+    }
+    .try-it-free{
+        padding: 5px 20px;
+    }
+    .info{
+        padding: 40px 50px;
+    }
+    
+    .get-started{
+        padding: 10px 30px;
+        font-size: 50%;
+        width: 60%;
+    }
+    .counter{
+        flex-direction: column;
+        
+    }
+    .counter h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    .counter-1, .counter-2{
+        margin: 10% auto;
+    }
+    .counter-text{
+        font-size: 80%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    /* --------- Grow Together ------- */
+    .user .row, .grow .row{
+        flex-direction: column-reverse;
+    }
+    .content-1, .content-2{
+        margin: 0 auto;
+    }
+    .bg-lt-blue{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .bg-img-mob{
+        display: block;
+        width: 100%;
+    }
+    .bg-img-desktop{
+        display: none;
+    }
+    #container-center{
+        margin: 30% auto;
+    }
+    /* ---------- FOOTER ----------- */
+    .bg-footer{
+        display: none;
+    }
+    .bg-footer-mob{
+        display: block;
+        width: 100%;
+    }
+    .row-footer{
+        flex-direction: column-reverse;
+    }
+    /* ----------- NEWSLETTER ---------- */
+    .newsletter{
+        margin-left: 0;
+    }
+    .newsletter-subscribe{
+        flex-direction: column;
+    }
+    .email-box{
+        width: 100%;
+    }
+    .subscribe{
+        margin-top: 5%;
+        width: 50%;
+        margin-left: auto;
+    }
+    /* ------------ HUDDLE ----------- */
+    .contact{
+        margin-top: 20%;
+    }
+    .info-footer{
+        width: 100%;
+    }
+    .fm p{
+        font-size: 7px;
+    }
+}
