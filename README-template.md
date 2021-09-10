@@ -41,8 +41,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/PiyushChakerwarty/huddle-curved.git)
-- Live Site URL: [Add live site URL here](https://piyushchakerwarty.github.io/huddle-curved/)
+- Solution URL: [PiyushChakerwarty/huddle-curved](https://github.com/PiyushChakerwarty/huddle-curved.git)
+- Live Site URL: [Click here!](https://piyushchakerwarty.github.io/huddle-curved/)
 
 ## My process
 
