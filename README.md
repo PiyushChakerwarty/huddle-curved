@@ -2,6 +2,8 @@
 
 ![Header/intro section for the Huddle landing page with curved sections](./design/desktop-preview.jpg)
 
+## View Landing page : [Huddle landing page with curved sections](https://piyushchakerwarty.github.io/huddle-curved/) 
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
